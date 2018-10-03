@@ -150,12 +150,7 @@ portraits: '/assets/profile.jpeg' # your portraits image file path
 ```yaml
 # SNS
 SNS: true
-SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
-  mail: 'mailto:abc@gmail.com'
-  weixin: '' # 你的微信二维码存放的地址
-  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
-  github: ''
-  Codepen: ''
+SNS-icon: #['Facebook', 'weibo', 'qq', 'github']
   weibo: ''
   instagram: ''
   Twitter: ''
@@ -215,17 +210,6 @@ nav: # 最佳体验 六个标签 且最好每个标签不超过4中文字
 
 
 
-#### 分页
-
-```yaml
-# 分页
-paginate: 2
-paginatepath: ['page:num']
-```
-
-​	随个人爱好在，在上面填写你需要的在首页一页最多显示多少篇博客的数字。
-
-​	本地部署的需要使用 `gem install jekyll-paginate` 或 `sudo gem install jekyll-paginate` 安装Jekyll的分页插件。
 
 
 
@@ -257,29 +241,6 @@ pygmentsTheme: 'default'
 
 上图为 **代码高亮试例图** ，仅以 html 作为参考例子，其他代码参考 上图，或自行切换测试选择自己喜欢的代码高亮主题
 
-
-
-#### 友情链接
-
-```yaml
-# 友情链接
-friends:
-  jekyll: 'https://www.jekyll.com.cn/'
-```
-
-​	按格式填写即可，排序与配置文件里的排序有关。
-
-
-
-#### 页脚
-
-```yaml
-# since
-footer:
-  since: 2018
-```
-
-​	用于页脚显示时间。
 
 
 
@@ -323,18 +284,6 @@ Gitment评论：
 
 
 
-#### 文章分享的路口
-
-```yaml
-# Share : weibo, qq, wechat, tencent, douban, qzone, linkedin, diandian, facebook, twitter, google
-social-share: true
-social-share-items: ['qq', 'wechat', 'weibo', 'twitter', 'facebook']
-```
-
-​	为了让文章更方便地分享，使用了第三方分享插件[Share.js](http://overtrue.github.io/share.js/)，支持一键分享到微博、QQ空间、QQ好友、微信、腾讯微博、豆瓣、Facebook、Twitter、Linkedin、Google+、点点等社交网站。
-
-​	只需要填写相关的名称在 `social-share-items` 后即可，显示顺序与书写顺序有关。
-
 
 
 #### 网站流量追综的配置
@@ -349,15 +298,3 @@ google-ID: ''
 ```
 
 ​	在 `baidu-url` 和 `google-ID` 分别填上注册获取的相关信息。使用 `true` 或者 `false` 开启或关闭他们。出于中国大陆网络环境，默认开启 百度统计 ，当然可以多开。
-
-
-
-### License 许可证
-
-HardCandy-Jekyll is licensed under [MIT](https://github.com/xukimseven/HardCandy-Jekyll/blob/master/LICENSE).
-
-
-
-### 求Star 求关注
-
-看到这里，如果你喜欢我的小项目，欢迎下载使用他，也请你为我点个小星星 😜 ，多谢。
